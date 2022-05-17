@@ -36,6 +36,7 @@ echo
 az network vnet create -g $rg -n $vname --address-prefix vprefix --subnet-name $sname --subnet-prefix $sprefix -l $l
 echo
 echo "finished..."
+echo
 
 
 

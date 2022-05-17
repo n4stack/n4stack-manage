@@ -10,6 +10,6 @@ clear
 az account show --output table
 
 echo
-echo "3) Ready to run commands..."
+echo "3) Ready to run commands from scripts folder..."
 echo
 
