@@ -21,13 +21,16 @@ esac
 
 rg="rg-"$vname
 l=northeurope
+
 echo
 echo ".. Creating Resource Group"
+echo
 
 # Request a resource group
 az group create -l northeurope -n $rg
 echo
 echo "Creating a VNET..."
+echo
 
 # Request a VNET
 az network vnet create -g $rg -n $vname --address-prefix vprefix --subnet-name $sname --subnet-prefix $sprefix -l $l

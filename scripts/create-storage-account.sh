@@ -23,13 +23,17 @@ location=northeurope
 
 echo
 echo "... now creating Resource Group $rg"
+echo
 
 az group create -l $location -n $rg
 
 echo
 echo "... now creating storage account: $saname"
+echo
 
 sku=Standard_LRS
 
 az storage account create --resource-group $rg --name $saname  -l $location --sku $sku
+
+echo "... finished"
 
