@@ -1,6 +1,16 @@
 # Create a VM in a new VNET example automation
 
-echo "Running steps to provision an Ubuntu VM into a new VNET..."
+echo "Running steps will create a new RG (rg-vm-app-011991) with a new VM in a new VNET using hardcoded values for a developer."
+
+read -p "Do you want to proceed? (yes/no) " yn
+
+case $yn in 
+	yes ) echo ok, we will proceed;;
+	no ) echo exiting...;
+		exit;;
+	* ) echo invalid response;
+		exit 1;;
+esac
 
 # Request a resource group
 az group create -l northeurope -n rg-vm-app-011991
