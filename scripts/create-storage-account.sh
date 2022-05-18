@@ -5,8 +5,8 @@
 
 location=northeurope
 
-read -p 'Please enter your storage account name, alphanumeric, no spaces. E.g: samyapp1 Use Control-C to exit. ' saname
-read -p 'Please enter tags for this resource. E.g: tier=dev' tags
+read -p 'Please enter your storage account name, e.g: samyapp1 ' saname
+read -p 'Please enter tags for this resource. E.g: tier=dev   ' tags
 
 rg="rg-"$saname
 
