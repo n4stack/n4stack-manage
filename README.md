@@ -15,7 +15,7 @@ Access Management — Sign-on, user access and control management (both for end-
 Service-Level Management & Monitoring — Includes end-to-end monitoring of an application/solution environment, in other words, the estate managed by MSP in Azure. Monitoring of resource/service health, utilization, incident status, as well as logging and alerts (manual, automated or ML based) are included in this category
 
 ```
-docker container run --name cmp --rm -it node4demo/n4stack-manage:latest
+docker container run --rm -it node4demo/n4stack-manage:latest
 ```
 
 ```
