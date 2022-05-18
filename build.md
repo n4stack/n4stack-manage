@@ -1,7 +1,7 @@
 # CMP
 
 ## Create the CMP Docker image
-docker image build . -t node4demo/cmp:latest -t node4demo/cmp:0.1.1
+docker image build . -t node4demo/cmp:latest -t node4demo/cmp:0.1.2
 
 ## run it to test
 docker container run --name cmp --rm -it node4demo/cmp:latest
