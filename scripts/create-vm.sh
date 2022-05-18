@@ -2,12 +2,14 @@
 echo
 echo "Please enter details to create a new VM. Use Control-C to exit."
 echo
+read -p 'location - e.g: northeurope ' l
 read -p 'Resource Group - e.g: rg-myvm ' rg
 read -p 'VM Name - e.g: myvm01 ' vmname
+read -p 'VM Size - e.g: Standard_D2s_v3 ' vmsize
 read -p 'VNET Name (that currently exists) - e.g: vnet01 ' vname
 read -p 'Subnet Name (that currently exists) - e.g: snet01 ' sname
 echo
-echo "You have entered $rg $vmname $vname $sname "
+echo "You have entered $l $rg $vmname $vmsize $vname $sname "
 echo 
 read -p "Do you want to proceed? (yes/no) " yn
 
@@ -24,15 +26,15 @@ echo ".. Creating Resource Group"
 echo
 
 # Request a resource group
-az group create -l northeurope -n $rg
+az group create -l $l -n $rg
 echo
 
 echo
 echo "Creating an Ubuntu VM..."
 
 # Request a VM 
-az vm create -n $vmname  --location northeurope -g $rg --image UbuntuLTS \
-  --subnet sname --size Standard_D2s_v3 --vnet-name $vname --generate-ssh-keys 
+az vm create -n $vmname  --location $l -g $rg --size $vmsize --image UbuntuLTS \
+  --subnet sname --vnet-name $vname --generate-ssh-keys 
 
 echo
 echo "finished..."
