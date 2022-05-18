@@ -2,7 +2,7 @@
 
 ## Start: Run the container
 ```
-docker container run --rm -it node4demo/n4stack-manage:latest
+docker container run --name cmp --rm -it node4demo/n4stack-manage:latest
 ```
 
 ## Locate the scripts
