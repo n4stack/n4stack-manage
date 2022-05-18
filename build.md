@@ -30,6 +30,6 @@ bash5.1# ./scripts/login.sh
 ```
 
 ## Example: To create an Azure Storage Account
-'''
+```
 ./scripts/create-storage-account.sh
 ```
