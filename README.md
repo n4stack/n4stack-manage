@@ -1,4 +1,4 @@
-This tool can be used as a CMP
+This tool can be used as a CMP.
 
 Service Request Management — An interface (UI or API) by which cloud services are consumed and/or requested by the customer of the MSP. It can be a clearly defined finite set of services provisioned from a self-serve service catalog or a service interface that serves as a pass-through to native Azure capabilities. The former could cater to infrastructure and operations (I&O) staff that just wants to provision IaaS resources while the latter could cater to developers that want flexibility to use a full suite of public cloud services. Typically provided by CMPs or IT service support management (ITSSM) tools, Azure portal service catalog created by the customer/the MSP on-behalf-of the customer, or MSP’s own custom portal/interface
 
