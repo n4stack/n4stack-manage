@@ -23,3 +23,8 @@ cd scripts
 ```
 ./login.sh
 ```
+
+```
+./scripts/create-storage-account.sh
+```
+
