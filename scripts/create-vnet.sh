@@ -1,11 +1,11 @@
 #!/bin/bash
 # Create a VM in a new VNET example automation
 
-echo "Please enter details to create a new VNET. Use Control-C to exit."
+echo "Please enter details to create a new VNET."
 read -p 'VNET Name - e.g: vnet01 ' vname
 read -p 'Subnet Name - e.g: snet01 ' sname
-read -p 'VNET Address Prefix - e.g: 10.100.0.0/16 ' vprefix
-read -p 'Subnet Address Prefix - e.g: 10.100.0.0/24 ' sprefix
+read -p 'VNET Address Prefix - e.g: 10.100.0.0/16   ' vprefix
+read -p 'Subnet Address Prefix - e.g: 10.100.0.0/24   ' sprefix
 
 echo "These are your entered values: " $vname $sname $vprefix $sprefix
 
