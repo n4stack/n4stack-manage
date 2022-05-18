@@ -25,6 +25,6 @@ cd scripts
 ```
 
 ```
-./scripts/create-storage-account.sh
+./create-storage-account.sh
 ```
 
