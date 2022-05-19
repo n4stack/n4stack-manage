@@ -19,7 +19,7 @@ cd scripts
 ./create-storage-account.sh
 ```
 
-### Create an Azure virtual Network
+### Create an Azure Virtual Network
 ```
 ./create-vnet.sh
 ```
