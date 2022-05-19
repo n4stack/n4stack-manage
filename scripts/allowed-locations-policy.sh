@@ -1,7 +1,6 @@
-
-
-read -p 'Please enter your a Resource Group that you limit locations to UKSouth, UKWest. E.g rg-uk-only ' rg
-echo "you have entered $rg "
+read -p 'Please enter your a Resource Group that you limit locations to. E.g uk-rg' rg
+read -p 'Enter location - e.g: uksouth ukwest ' l
+echo "you have entered " $rg $l
 read -p "Do you want to proceed? (yes/no) " yn
 
 case $yn in 
@@ -15,7 +14,7 @@ esac
 echo
 echo ".. now creating Resource Group (if not exist)"
 echo
-az group create -l northeurope -n $rg
+az group create -l $l -n $rg
 
 # Retreive built in policy definition
 definition=0473574d-2d43-4217-aefe-941fcdf7e684
@@ -32,3 +31,4 @@ az policy assignment create --name 'allowedLocations' --display-name 'allowedLoc
 
 echo
 echo "... finished"
+
